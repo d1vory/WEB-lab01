@@ -140,6 +140,145 @@ body{
 	background-size:cover;
 }
 
+.image-part-macboock{
+	background-image: url('../assets/macboock.png');
+	min-height: 500px;
+	width: auto;
+	background-size:cover;
+}
+
+
+
+.section3 {
+	line-height: 50px;
+	font-weight: 500;
+	color: #282828;
+
+	background-image: url('../assets/section3-bg(1).png');
+	min-height:675px;
+	width: 100%;
+	background-size:cover;
+	@extend %aligning;
+
+	.features-wrapper{
+		
+		@extend %aligning;
+
+		padding: 0px 100px;
+
+		.title-holder {
+
+			.minititle {
+				/* Style for "NEW FEATUR" */
+				color: #ff6d6d;
+				font-size: 16px;
+				text-transform: uppercase;
+				letter-spacing: 3.2px;
+				margin: 0px;
+			}
+
+			.features-title {
+				/* Style for "Some aweso" */
+
+				font-size: 40px;
+
+				letter-spacing: 1.6px;
+			}
+		}
+
+		.features-holder {
+
+			padding:50px 0px;
+			text-align:center;
+
+			.feature{
+
+
+				.subtitle{
+					
+					font-size: 22px;
+
+					letter-spacing: 0.88px;
+
+				}
+
+				.features-article{
+
+					opacity: 0.66;
+
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 26px;
+
+					letter-spacing: 0.64px;
+				}
+			}
+		}
+
+	}
+
+}
+
+
+.image-holder {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.clients-section {
+	line-height: 50px;
+	font-weight: 500;
+	color: #ffff;
+
+	text-align: center;
+	background-image: url('../assets/clients-bg.png');
+	min-height:675px;
+	width: 100%;
+	background-size:cover;
+
+
+	@extend %aligning;
+
+}
+
+.founder-name {
+
+	font-size: 22px;
+
+	letter-spacing: 0.88px;
+}
+
+.founder-job {
+
+	color: #ff6d6d;
+
+	font-size: 16px;
+
+}
+
+.fouder-article{
+
+	opacity: 0.66;
+
+
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 26px;
+
+	letter-spacing: 0.64px;
+}
+
+
+.sponsor-img{
+	padding-right: 30px;
+	padding-left:  30px;
+
+	margin: 50px;
+}
+
 @media screen and (max-width: 600px) {
   .image-part {
     display: none;
@@ -149,9 +288,6 @@ body{
   	padding: 30px 30px;
   }
 }
-
-
-
 
 .play-video-image:hover > .overlay {
 	background-color:#000;
