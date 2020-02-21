@@ -1,5 +1,8 @@
 body .outer-container {
-  font-family: 'Exo'; }
+  font-family: 'Exo';
+  min-width: 400px;
+  font-weight: 500;
+  line-height: 49.97px; }
 
 .header, .title-holder, .section3, .section3 .features-wrapper, .clients-section {
   display: flex;
@@ -37,26 +40,28 @@ body .outer-container {
     margin: 20px 0px;
     height: 59px;
     width: 59px; }
-  .title-holder .try-now-button {
-    /*@extend %header-common;*/
-    display: flex;
-    width: 190px;
-    height: 50px;
-    border-radius: 3px;
-    background-color: #ff6d6d;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px; }
-    .title-holder .try-now-button .button-text {
-      padding: 0 0;
-      margin: auto;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 75px;
-      text-transform: uppercase;
-      text-align: center; }
+
+.try-now-button .button-text, #input-submit {
+  padding: 0 0;
+  margin: auto;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.try-now-button {
+  /*@extend %header-common;*/
+  display: flex;
+  width: 190px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #ff6d6d;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px; }
 
 .kek {
   display: flex;
@@ -164,13 +169,73 @@ body .outer-container {
   line-height: 26px;
   letter-spacing: 0.64px; }
 
+.section5 {
+  text-align: center; }
+
+.section6 {
+  background-color: #323969;
+  width: 100%;
+  text-align: center; }
+
+#input-submit {
+  margin: 0px;
+  border-style: none; }
+
+#designers-text-part {
+  padding-bottom: 30px; }
+
+.inputform {
+  /* Style for "Rounded Re" */
+  width: 100%;
+  height: 49px;
+  border-radius: 3px;
+  border: 2px solid #ffffff;
+  background-color: #f6f5f3;
+  opacity: 0.5;
+  padding-left: 10px; }
+
+.terms {
+  text-decoration: underline;
+  color: inherit; }
+
+.inputwrapper {
+  padding: 90px 0px; }
+
+.designers {
+  /* Style for "Over 1000" */
+  color: #ffffff;
+  font-size: 40px;
+  /* Text style for "O, ver 100" */
+  letter-spacing: 1.6px; }
+
+.section5-image-part {
+  background-image: url("../assets/section5-img.png");
+  background-size: cover;
+  width: 75%;
+  min-height: 275px;
+  margin: auto; }
+
+.hint {
+  display: flex;
+  align-items: start; }
+  .hint .arrow-img {
+    display: flex; }
+  .hint .hint-text {
+    /* Style for "30 days fr" */
+    color: #f6f5f3;
+    font-family: Exo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0.64px; }
+
 .sponsor-img {
   padding-right: 30px;
   padding-left: 30px;
   margin: 50px; }
 
 @media screen and (max-width: 600px) {
-  .image-part {
+  .image-part, .image-part-macboock {
     display: none; }
   .text-part {
     padding: 30px 30px; } }

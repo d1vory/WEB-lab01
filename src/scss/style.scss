@@ -1,6 +1,9 @@
 body{
 	.outer-container{
 	font-family: 'Exo';
+	min-width: 400px;
+	font-weight: 500;
+line-height: 49.97px;
 	}
 }
 
@@ -53,7 +56,24 @@ body{
   		width: 59px;
   	}
 
-  	.try-now-button {
+  	
+
+}
+
+%buttontext {
+		padding: 0 0;
+			margin: auto;
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 75px;
+			text-transform: uppercase;
+			text-align: center;
+
+}
+
+
+.try-now-button {
   		/*@extend %header-common;*/
   		display: flex;
   		width: 190px;
@@ -66,20 +86,10 @@ body{
 
          margin: 20px 0px;
 		.button-text{
-			padding: 0 0;
-			margin: auto;
-			color: #ffffff;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 75px;
-			text-transform: uppercase;
-			text-align: center;
+			@extend %buttontext ;
 		}
 
 	}
-
-
-}
 
 .kek {
 
@@ -271,6 +281,88 @@ body{
 	letter-spacing: 0.64px;
 }
 
+.section5 {
+	text-align: center;
+}
+
+.section6 {
+	background-color: #323969;
+	width: 100%;
+	text-align: center;
+}
+
+#input-submit {
+	margin: 0px;
+	border-style: none;
+	@extend %buttontext;
+}
+
+#designers-text-part{
+	padding-bottom: 30px;
+}
+
+.inputform {
+	/* Style for "Rounded Re" */
+width: 100%;
+height: 49px;
+border-radius: 3px;
+border: 2px solid #ffffff;
+background-color: #f6f5f3;
+opacity: 0.5;
+padding-left:10px;
+
+}
+
+.terms {
+	text-decoration: underline;
+	color: inherit;
+}
+.inputwrapper {
+	padding: 90px 0px;
+}
+
+.designers {
+	/* Style for "Over 1000" */
+
+color: #ffffff;
+
+font-size: 40px;
+
+/* Text style for "O, ver 100" */
+letter-spacing: 1.6px;
+}
+
+.section5-image-part{
+	background-image: url('../assets/section5-img.png');
+	background-size:cover;
+	width: 75%;
+	min-height: 275px;
+	margin: auto;
+}
+
+.hint {
+	display: flex;
+	align-items: start;
+
+	.arrow-img {
+		display: flex;
+	}
+
+	.hint-text {
+		/* Style for "30 days fr" */
+
+		color: #f6f5f3;
+		font-family: Exo;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 75px;
+
+		letter-spacing: 0.64px;
+	}
+
+
+}
+
 
 .sponsor-img{
 	padding-right: 30px;
@@ -280,7 +372,7 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .image-part {
+  .image-part, .image-part-macboock {
     display: none;
   }
 
