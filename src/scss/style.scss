@@ -204,13 +204,7 @@ line-height: 49.97px;
 			.feature{
 
 
-				.subtitle{
-					
-					font-size: 22px;
-
-					letter-spacing: 0.88px;
-
-				}
+				
 
 				.features-article{
 
@@ -228,6 +222,15 @@ line-height: 49.97px;
 	}
 
 }
+
+.subtitle{
+					
+					text-align:center;
+					font-size: 22px;
+
+					letter-spacing: 0.88px;
+
+				}
 
 
 .image-holder {
@@ -340,6 +343,7 @@ letter-spacing: 1.6px;
 	margin: auto;
 }
 
+
 .hint {
 	display: flex;
 	align-items: start;
@@ -364,6 +368,29 @@ letter-spacing: 1.6px;
 }
 
 
+.footer-text {
+	/* Style for "Aenean lac" */
+
+opacity: 0.56;
+color: #282828;
+
+font-size: 14px;
+
+line-height: 26px;
+/* Text style for "Aenean lac" */
+letter-spacing: 0.56px;
+}
+
+.flink {
+	display: block;
+}
+
+.footer-subtitle {
+	.subtitle {
+		text-align: left;
+	}
+}
+
 .sponsor-img{
 	padding-right: 30px;
 	padding-left:  30px;
@@ -371,8 +398,29 @@ letter-spacing: 1.6px;
 	margin: 50px;
 }
 
+.footer-wrapper {
+	@extend %aligning;
+	width: 100%;
+}
+
+.qwer {
+	margin: auto;
+}
+
+.footer-columns-part{
+	width: 100%
+}
+
+.footer-image-part {
+	background-image: url('../assets/Rectangle_footer.png');
+	min-height: 254px;
+	width: auto;
+	background-size:cover;
+
+}
+
 @media screen and (max-width: 600px) {
-  .image-part, .image-part-macboock {
+  .image-part, .image-part-macboock ,.footer-image-part {
     display: none;
   }
 
