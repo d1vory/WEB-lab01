@@ -4,7 +4,7 @@ body .outer-container {
   font-weight: 500;
   line-height: 49.97px; }
 
-.header, .title-holder, .section3, .section3 .features-wrapper, .clients-section, .footer-wrapper {
+.header, .title-holder, #text-holder-5-id, .section3, .section3 .features-wrapper, .clients-section, .footer-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -104,6 +104,9 @@ body .outer-container {
   min-height: 500px;
   width: auto;
   background-size: cover; }
+
+#text-holder-5-id {
+  margin: auto; }
 
 .section3 {
   line-height: 50px;
@@ -266,6 +269,36 @@ body .outer-container {
   width: auto;
   background-size: cover; }
 
+.socials-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.social-links-image {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.email-form {
+  height: 50px;
+  display: flex;
+  align-items: left; }
+
+.email-input {
+  font-size: 22px; }
+
+.submit-email {
+  background: url("../assets/send4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FF6D6D;
+  cursor: pointer;
+  height: 50px;
+  width: 50px; }
+
+.a:hover, .b:hover, .c:hover, .d:hover {
+  filter: brightness(30%); }
+
 @media screen and (max-width: 600px) {
   .image-part, .image-part-macboock, .footer-image-part {
     display: none; }
@@ -282,13 +315,3 @@ body .outer-container {
 
 .try-now-button:hover {
   background-color: #e60000; }
-
-/* Text style for "Try now" */
-/*
-letter-spacing: 3.2px;
-  	}
-
-  	
-}
-
-*/

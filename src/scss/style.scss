@@ -157,6 +157,11 @@ line-height: 49.97px;
 	background-size:cover;
 }
 
+#text-holder-5-id {
+	margin: auto;
+	@extend %aligning;
+}
+
 
 
 .section3 {
@@ -419,6 +424,49 @@ letter-spacing: 0.56px;
 
 }
 
+.socials-holder {
+	display: flex;
+	justify-content: center;
+    
+    align-items: center;
+}
+
+.social-links-image {
+	width : 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	
+}
+
+.email-form {
+	height: 50px;
+	display: flex;
+	 align-items: left;
+}
+.email-input{
+	font-size: 22px;
+}
+
+.submit-email {
+	
+	
+	background: url('../assets/send4.png') ;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-color: #FF6D6D;
+    cursor: pointer;
+  
+    height: 50px;
+    width: 50px;
+  
+ 
+}
+
+.a:hover , .b:hover , .c:hover , .d:hover{
+		filter: brightness(30%);
+	}
+
 @media screen and (max-width: 600px) {
   .image-part, .image-part-macboock ,.footer-image-part {
     display: none;
@@ -443,12 +491,4 @@ letter-spacing: 0.56px;
 	}
 
 
-/* Text style for "Try now" */
-/*
-letter-spacing: 3.2px;
-  	}
 
-  	
-}
-
-*/
